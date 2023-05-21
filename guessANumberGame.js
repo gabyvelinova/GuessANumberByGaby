@@ -34,7 +34,7 @@ function guessANumber() {
     readline.question(`Do you want to continue with Level 2?`, answer => {
       proceedToLevel2 = answer;
 
-      if (proceedToLevel2 === "yes") {
+      if (proceedToLevel2 === "yes" || proceedToLevel2 === "y") {
         console.log(`You have ${guessCount} tries remaining.`)
         secondLevelReadline()
       } else {
